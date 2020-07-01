@@ -309,7 +309,7 @@ Now we can express our original for loop as:
 ```{r, eval = FALSE}
 walk2(
   urls, path, 
-  dot_every(delay_by(download.file, 0.1), 10), 
+  delay_by(dot_every(download.file, 0.1), 10), 
   quiet = TRUE
 )
 ```
